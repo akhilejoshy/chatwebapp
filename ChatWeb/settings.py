@@ -33,7 +33,7 @@ DEBUG = True
 
 
 
-ALLOWED_HOSTS = os.getenv("ALLOWED_HOSTS", "chatwebapp-x0f1.onrender.com").split(",")
+ALLOWED_HOSTS = ["chatwebapp-x0f1.onrender.com"]
 
 
 # Application definition
