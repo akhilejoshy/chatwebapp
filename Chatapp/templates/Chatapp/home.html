@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat - Enter Interest</title>
+</head>
+<body>
+    <h2>Enter Your Interest</h2>
+    <form action="{% url 'chat' 'placeholder' %}" method="GET" onsubmit="redirectToChat(event)">
+        <input type="text" id="interest" placeholder="Enter Interest" required>
+        <button type="submit">Start Chat</button>
+    </form>
+
+    <script>
+        function redirectToChat(event) {
+            event.preventDefault();
+            let interest = document.getElementById("interest").value;
+            if (interest.trim() !== "") {
+                window.location.href = `/chat/${interest}/`;  // Redirect to chat room
+            }
+        }
+    </script>
+</body>
+</html>
