@@ -33,7 +33,7 @@ DEBUG = True
 
 
 
-ALLOWED_HOSTS = ["chatwebapp-x0f1.onrender.com"]
+ALLOWED_HOSTS = ["chatwebapp-x0f1.onrender.com", "127.0.0.1", "localhost"]
 
 
 # Application definition
